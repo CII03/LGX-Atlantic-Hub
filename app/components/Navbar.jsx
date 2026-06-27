@@ -77,22 +77,22 @@ export default function Navbar() {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            style={{ background: "rgba(10,22,40,0.97)", borderTop: "1px solid rgba(255,255,255,0.08)" }}
+           initial={{ opacity: 0, height: 0 }}
+           animate={{ opacity: 1, height: "auto" }}
+           exit={{ opacity: 0, height: 0 }}
+           style={{ background: "rgba(10,22,40,0.97)", borderTop: "1px solid rgba(255,255,255,0.08)", overflow: "hidden" }}
           >
-            <div className="px-6 py-4 flex flex-col gap-2">
+           <div style={{ padding: "20px 28px", display: "flex", flexDirection: "column", gap: "8px" }}>
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   href={link.path}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="px-4 py-3 rounded-xl text-sm font-medium transition-all"
+                  className="rounded-xl text-sm font-medium transition-all"
                   style={
                     isActive(link.path)
                       ? { background: "linear-gradient(135deg, #d4af37, #c9a961)", color: "#0a1628" }
-                      : { color: "#d1d5db" }
+                      : { color: "#d1d5db", padding: "14px 18px" }
                   }
                 >
                   {link.label}

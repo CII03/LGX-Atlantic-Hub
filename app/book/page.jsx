@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import { Calendar, Clock, Users, MessageSquare, User, Phone, CheckCircle } from "lucide-react";
 import { useForm } from "react-hook-form";
 
-const WHATSAPP_NUMBER = "234XXXXXXXXXX";
+const WHATSAPP_NUMBER = "2348160566598";
 
 export default function BookPage() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -152,7 +152,7 @@ ${data.additionalNotes ? `*Notes:* ${data.additionalNotes}` : ""}`;
             </div>
 
             {/* Date and Time */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px" }}>
+            <div className="grid grid-cols-1 sm:grid-cols-2" style={{ gap: "20px" }}>
               <div>
                 <label style={labelStyle}>
                   <Calendar size={16} color="#d4af37" /> Date *

@@ -53,7 +53,7 @@ export default function Footer() {
             <h3 style={{ color: "#fff", fontWeight: 600, fontSize: "0.95rem", marginBottom: "20px" }}>Contact</h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
               <p style={{ color: "#6b7280", fontSize: "0.88rem" }}>Okitipupa, Ondo State</p>
-              <p style={{ color: "#6b7280", fontSize: "0.88rem" }}>WhatsApp: +234 XXX XXX XXXX</p>
+              <p style={{ color: "#6b7280", fontSize: "0.88rem" }}>WhatsApp: +234 816 056 6598</p>
             </div>
           </div>
         </div>

@@ -119,7 +119,7 @@ export default function Home() {
           </motion.div>
 
           {/* cards grid */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "20px" }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2" style={{ gap: "20px" }}>
             {services.map((service, index) => (
               <motion.div
                 key={service.title}

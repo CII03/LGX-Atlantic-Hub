@@ -71,15 +71,14 @@ export default function ServicesPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
+            className="grid grid-cols-1 lg:grid-cols-2"
             style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: "60px",
-              alignItems: "center",
+            gap: "60px",
+            alignItems: "center",
             }}
           >
             {/* Image */}
-            <div style={{ order: index % 2 === 1 ? 2 : 1 }}>
+            <div className={index % 2 === 1 ? "order-1 lg:order-2" : "order-1"}>
               <div style={{ borderRadius: "20px", overflow: "hidden", aspectRatio: "4/3" }}>
                 <img
                   src={service.image}
@@ -92,7 +91,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Content */}
-            <div style={{ order: index % 2 === 1 ? 1 : 2 }}>
+            <div className={index % 2 === 1 ? "order-2 lg:order-1" : "order-2"}>
               <div style={{ width: "64px", height: "64px", borderRadius: "16px", background: service.color, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "24px" }}>
                 <service.icon color="white" size={28} />
               </div>
