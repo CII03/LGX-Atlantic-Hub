@@ -90,12 +90,12 @@ export default function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="rounded-xl text-sm font-medium transition-all"
                   style={
-                    isActive(link.path)
-                      ? { background: "linear-gradient(135deg, #d4af37, #c9a961)", color: "#0a1628" }
-                      : { color: "#d1d5db", padding: "14px 18px" }
+                  isActive(link.path)
+                  ? { background: "linear-gradient(135deg, #d4af37, #c9a961)", color: "#0a1628", padding: "14px 20px", display: "block" }
+                  : { color: "#d1d5db", padding: "14px 20px", display: "block" }
                   }
                 >
-                  {link.label}
+                 {link.label}
                 </Link>
               ))}
             </div>

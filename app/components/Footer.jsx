@@ -15,7 +15,7 @@ export default function Footer() {
       <div style={{ maxWidth: "900px", margin: "0 auto", padding: "64px 40px 40px" }}>
 
         {/* Three columns */}
-        <div style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr 1fr", gap: "48px", marginBottom: "48px" }}>
+        <div className="grid grid-cols-1 sm:grid-cols-[1.4fr_1fr_1fr]" style={{ gap: "40px", marginBottom: "48px" }}>
 
           {/* Brand */}
           <div>
